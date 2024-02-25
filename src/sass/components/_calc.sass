@@ -1,0 +1,157 @@
+.calc
+  padding-top: 90px
+  overflow: hidden
+  background: #05011d
+  color: #fff
+  .container
+    @include flexbox
+    &::before
+      content: ''
+      z-index: -1
+      position: absolute
+      top: -710px
+      right: -590px
+      width: 980px
+      height: 980px
+      background: #125FFA
+      filter: blur(460px)
+      border-radius: 100%
+      backface-visibility: hidden
+      will-change: transform
+  &-title
+    text-align: center
+    margin-bottom: 60px
+    width: 100%
+    h2
+      font-size: 100px
+      line-height: 70px
+      text-transform: uppercase
+      letter-spacing: 0.25em
+      font-weight: 400
+      span
+        &:nth-child(1)
+          background: linear-gradient(269deg, #FFF 48.75%, rgba(36, 36, 36, 0.00) 119.47%)
+          background-clip: text
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+        &:nth-child(2)
+          background: linear-gradient(112deg, #0068FA 15.53%, #8C1FF9 59.1%, rgba(140, 31, 249, 0.00) 109.31%)
+          background-clip: text
+          -webkit-background-clip: text
+          -webkit-text-fill-color: transparent
+    h3
+      font-size: 18px
+      font-weight: 400
+      line-height: 20px
+      margin-top: 20px
+  &-main
+    width: 670px
+    @include flexbox
+    align-items: flex-start
+    gap: 30px
+  &-section
+    flex: 1
+    @include flexbox
+    align-items: flex-start
+    gap: 10px 12px
+    p
+      font-size: 16px
+      color: #fafafa
+      width: 100%
+      opacity: 0.7
+    &:nth-child(2n-1)
+      width: 256px
+      flex: initial
+  &-radio
+    input
+      @include visually-hidden
+      &:checked + span
+        background: #fff
+        border-color: #fff
+        color: #06031f
+    span
+      display: block
+      padding: 11px 15px
+      font-size: 14px
+      line-height: 16px
+      border: 1px solid #2C2941
+      border-radius: 12px
+      cursor: pointer
+      transition: .25s
+    &.onoff
+      display: none
+  &-total
+    margin-top: 20px
+    width: 256px
+    padding: 15px 0
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+    border-top: 1px solid #45455D
+    border-bottom: 1px solid #45455D
+    p
+      font-size: 16px
+      opacity: 0.7
+    b
+      font-weight: 700
+      font-size: 18px
+  &-image
+    height: 300px
+    margin-top: 40px
+    width: 100%
+    position: relative
+    img
+      position: absolute
+      top: 0
+      left: 50%
+      right: 0
+      margin: 0 auto
+      max-width: initial
+      transform: translateX(-50%)
+      opacity: 0
+      transition: .25s
+      &.active
+        opacity: 1
+  &-shop
+    margin-left: auto
+    width: 560px
+    padding: 50px
+    border-radius: 20px
+    border: 1px solid rgba(255, 255, 255, 0.22)
+    background: linear-gradient(233deg, rgba(61, 54, 99, 0.50) 2.77%, rgba(25, 22, 40, 0.50) 71.53%)
+    h3
+      font-size: 34px
+      font-weight: 400
+      line-height: 1.3
+    &__links
+      @include flexbox
+      align-items: flex-start
+      gap: 12px
+      margin-top: 20px
+      position: relative
+      z-index: 5
+      li
+        flex: 1
+      a
+        width: 100%
+        height: 55px
+        @include flexbox
+        align-items: center
+        justify-content: center
+        border-radius: 16px
+        border: 1px solid rgba(255, 255, 255, 0.15)
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          top: 0
+          left: 0
+          right: 0
+          bottom: 0
+          border-radius: 16px
+          background: linear-gradient(82deg, #0068FA 0%, #8C1FF9 102.57%)
+          z-index: -1
+          opacity: 0
+          transition: .25s
+        &:hover::before
+          opacity: 1

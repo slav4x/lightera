@@ -1,0 +1,40 @@
+.interior
+  padding: 90px 0
+  &-subtitle
+    font-size: 18px
+    font-weight: 400
+    opacity: 0.5
+    margin-bottom: 30px
+  .title
+    span
+      background: linear-gradient(82deg, #0068FA 0%, #8C1FF9 100%)
+      background-clip: text
+      -webkit-background-clip: text
+      -webkit-text-fill-color: transparent
+    br
+      display: none
+  &-slider
+    margin-top: 50px
+    position: relative
+    .swiper-slide
+      width: auto
+      overflow: hidden
+      border-radius: 20px
+      img
+        height: 566px
+  &-swipe
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 138px
+    z-index: 20
+    margin: auto
+    width: 100px
+    height: 100px
+    background: rgba(0,0,0,.3)
+    box-shadow: 0 0 0 20px rgba(0,0,0,.15)
+    border-radius: 20px
+    pointer-events: none
+    transition: .2s
+    &.hide
+      opacity: 0

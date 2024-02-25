@@ -1,0 +1,127 @@
+.hero
+  background: #f1f6fe
+  padding-bottom: 90px
+  position: relative
+  video
+    object-fit: cover
+    background-size: cover
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    left: 0
+  &-top
+    @include flexbox
+    align-items: center
+    justify-content: space-between
+    padding: 30px 0
+    &__btn
+      line-height: 20px
+      color: #101010
+      background: #fff
+      padding: 15px 20px
+      border-radius: 12px
+  &-main
+    padding-top: 80px
+    &__title
+      text-align: center
+      h1
+        font-size: 100px
+        line-height: 70px
+        text-transform: uppercase
+        letter-spacing: 0.18em
+        font-weight: 400
+        span
+          &:nth-child(1)
+            background: linear-gradient(269deg, #242424 48.75%, rgba(36, 36, 36, 0.00) 119.47%)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+          &:nth-child(2)
+            background: linear-gradient(112deg, #0068FA 15.53%, #8C1FF9 59.1%, rgba(140, 31, 249, 0.00) 109.31%)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+      h2
+        font-size: 18px
+        font-weight: 400
+        line-height: 20px
+        margin-top: 20px
+  &-air
+    position: relative
+    &__switch
+      position: absolute
+      z-index: 10
+      top: 50px
+      left: 0
+      right: 0
+      @include flexbox
+      align-items: center
+      justify-content: center
+      gap: 10px
+      li
+        display: block
+        width: 36px
+        height: 36px
+        background: #000
+        border-radius: 100%
+        border: 6px solid #fff
+        cursor: pointer
+        transition: .25s
+        &:nth-child(1)
+          background: linear-gradient(180deg, #D4D4D4 0%, #F0F0F0 100%)
+        &:nth-child(2)
+          background: linear-gradient(180deg, #505050 0%, #747474 100%)
+        &:nth-child(3)
+          background: linear-gradient(180deg, #DBCEA2 0%, #FFEEB1 100%)
+        &.active
+          box-shadow: 0 0 0 1px #0068FA
+    &__images
+      position: relative
+      z-index: 5
+      height: 375px
+      margin-top: 20px
+      img
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        opacity: 0
+        transition: .25s
+        &.active
+          opacity: 1
+    &__info
+      max-width: 1170px
+      margin: 0 auto
+      border-radius: 19px
+      border: 1px solid rgba(0, 0, 0, 0.05)
+      background: rgba(255, 255, 255, 0.60)
+      backdrop-filter: blur(7px)
+      padding: 60px 45px 40px
+      @include flexbox
+      align-items: center
+      p
+        max-width: 555px
+        line-height: 1.55
+        color: rgba(36, 36, 36, 0.40)
+        span
+          color: #242424
+      h3
+        font-size: 32px
+        font-weight: 400
+        line-height: 22px
+        padding: 25px 20px
+        border-radius: 20px
+        border: 1px solid rgba(0, 0, 0, 0.05)
+        background: linear-gradient(0deg, #FFF 0%, #FFF 100%), #D9D9D9
+        margin-left: auto
+      a
+        display: block
+        font-size: 18px
+        font-weight: 400
+        line-height: 22px
+        padding: 25px 20px
+        border-radius: 20px
+        margin-left: 15px
+        background: linear-gradient(82deg, #0068FA 0%, #8C1FF9 102.57%), #D9D9D9
+        color: #fff
