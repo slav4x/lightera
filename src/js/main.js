@@ -33,8 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
       },
     },
+    navigation: {
+      nextEl: '.tech-arrow',
+    },
     on: {
-      sliderFirstMove: function () {
+      slideChange: function () {
         const techSwipe = document.querySelector('.tech-swipe');
         techSwipe.classList.add('hide');
       },
@@ -63,8 +66,11 @@ document.addEventListener('DOMContentLoaded', function () {
         spaceBetween: 20,
       },
     },
+    navigation: {
+      nextEl: '.interior-arrow',
+    },
     on: {
-      sliderFirstMove: function () {
+      slideChange: function () {
         const interiorSwipe = document.querySelector('.interior-swipe');
         interiorSwipe.classList.add('hide');
       },

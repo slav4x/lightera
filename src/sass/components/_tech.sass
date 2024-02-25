@@ -73,6 +73,23 @@
       background-image: url(../img/tech-bg-5.jpg)
     &-6
       background-image: url(../img/tech-bg-6.jpg)
+  &-arrow
+    position: absolute
+    top: 0
+    bottom: 0
+    right: 0
+    margin: auto 0
+    width: 52px
+    height: 52px
+    border-radius: 100%
+    z-index: 100
+    backdrop-filter: blur(12px)
+    background: rgba(255,255,255,.4) url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.70711 1.9428L9.07107 8.30676C9.46159 8.69728 9.46159 9.33045 9.07107 9.72097L2.70711 16.0849C2.31658 16.4755 1.68342 16.4755 1.29289 16.0849C0.902368 15.6944 0.902368 15.0612 1.29289 14.6707L6.94975 9.01386L1.29289 3.35701C0.902369 2.96648 0.902369 2.33332 1.29289 1.9428C1.68342 1.55227 2.31658 1.55227 2.70711 1.9428Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center
+    cursor: pointer
+    transition: .25s
+    &.swiper-button-disabled
+      opacity: 0
+      pointer-events: none
 
 .path
   width: 20px
