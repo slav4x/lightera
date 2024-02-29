@@ -238,6 +238,38 @@
         border-radius: 100%
         border: 1px solid rgba(255, 255, 255, 0.10)
 
+  &-form
+    padding: 80px 40px
+    border-radius: 20px
+    border: 1px solid rgba(255, 255, 255, 0.10)
+    background: linear-gradient(233deg, rgba(41, 40, 44, 0.60) 2.77%, rgba(75, 74, 79, 0.60) 71.53%)
+    backdrop-filter: blur(56px)
+    margin-top: 25px
+    &__head
+      @include flexbox
+      align-items: flex-start
+      h2
+        font-size: 64px
+        font-weight: 400
+      p
+        line-height: 1.1
+        max-width: 370px
+        font-size: 16px
+        margin-top: 25px
+        margin-left: 30px
+    form
+      @include flexbox
+      align-items: flex-start
+      margin-top: 30px
+      gap: 45px
+      .input
+        flex: 1
+      span
+        @include flexbox
+        align-items: flex-start
+        flex-direction: column
+        gap: 15px
+
 @keyframes bounce
   0%
     width: 64px
