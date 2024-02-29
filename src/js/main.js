@@ -190,4 +190,65 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   checkAndUpdate();
+
+  // Генерация случайного токена
+  function generateToken() {
+    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+    let token = '';
+    for (let i = 0; i < 30; i++) {
+      token += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+    return token;
+  }
+
+  // Установка токена в скрытое поле формы
+  function setToken(form) {
+    const token = generateToken();
+    const hiddenInput = document.createElement('input');
+    hiddenInput.type = 'hidden';
+    hiddenInput.name = 't';
+    hiddenInput.value = token;
+    form.appendChild(hiddenInput);
+  }
+
+  // Инициализация токена для каждой формы на странице
+  const forms = document.querySelectorAll('form');
+  forms.forEach(function (form) {
+    setToken(form);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const button = form.querySelector('button');
+
+      button.style.opacity = 0.5;
+      button.style.cursor = 'not-allowed';
+      button.disabled = true;
+
+      const inputs = form.querySelectorAll('input');
+
+      setTimeout(() => {
+        button.style.opacity = 1;
+        button.disabled = false;
+
+        inputs.forEach((input) => {
+          input.value = '';
+        });
+
+        Fancybox.close();
+
+        Fancybox.show([{ src: '#popup-thanks', type: 'inline' }]);
+      }, 300);
+
+      const formUrl = form.getAttribute('action');
+      const formData = new FormData(this);
+
+      fetch(formUrl, {
+        method: 'POST',
+        body: formData,
+      })
+        .then((response) => response.json())
+        .catch((error) => console.error('Error:', error));
+    });
+  });
 });

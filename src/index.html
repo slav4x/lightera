@@ -196,10 +196,10 @@
         <h2>Оставьте заявку</h2>
         <p>Менеджер свяжется с вами в течение 30 минут и проконсультирует по любым вопрсам</p>
       </div>
-      <form action="#" method="post">
+      <form action="php/send.php" method="post">
         <input type="text" name="name" class="input" placeholder="Введите ваше имя" />
         <input type="email" name="email" class="input" placeholder="Введите ваш e-mail" />
-        <input type="tel" name="phone" class="input masked" placeholder="+7 (___) ___ _____" required />
+        <input type="tel" name="phone" class="input masked" placeholder="+7 (___) ___-__-__" required />
         <span>
           <button class="btn">Заказать звонок</button>
           <label class="checkbox">
@@ -363,10 +363,10 @@
     </form>
     <div class="calc-form" data-aos="fade-up" data-aos-offset="100">
       <h2 class="calc-form__title">Оставьте заявку и менеджер проконсультирует вас по любым вопросам</h2>
-      <form action="#" method="post">
+      <form action="php/send.php" method="post">
         <input type="text" name="name" class="input" placeholder="Введите ваше имя" />
         <input type="email" name="email" class="input" placeholder="Введите ваш e-mail" />
-        <input type="tel" name="phone" class="input masked" placeholder="+7 (___) ___ _____" required />
+        <input type="tel" name="phone" class="input masked" placeholder="+7 (___) ___-__-__" required />
         <span>
           <button class="btn">Заказать звонок</button>
           <label class="checkbox">
@@ -414,10 +414,10 @@
 <div class="popup" id="popup-call">
   <h3>Оставьте ваши контактные данные</h3>
   <h4>и наш специалист свяжется с вами в течение 30 минут</h4>
-  <form action="#" method="post">
+  <form action="php/send.php" method="post">
     <input type="text" name="name" class="input black" placeholder="Введите ваше имя" />
     <input type="email" name="email" class="input black" placeholder="Введите ваш e-mail" />
-    <input type="tel" name="phone" class="input black masked" placeholder="+7 (___) ___ _____" required />
+    <input type="tel" name="phone" class="input black masked" placeholder="+7 (___) ___-__-__" required />
     <span>
       <button class="btn">Заказать звонок</button>
       <label class="checkbox black">
@@ -426,6 +426,11 @@
       </label>
     </span>
   </form>
+</div>
+
+<div class="popup" id="popup-thanks">
+  <h3>Заявка отправлена</h3>
+  <h4>Наш специалист свяжется с вами в течение 30 минут</h4>
 </div>
 
 {% endblock %}
