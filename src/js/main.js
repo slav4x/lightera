@@ -134,12 +134,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function searchById(id) {
     const price = document.querySelector('.price');
-    const market = document.querySelector('.market');
-    const marketLink = market.querySelector('a');
-    const ozon = document.querySelector('.ozon');
-    const ozonLink = ozon.querySelector('a');
-    const sber = document.querySelector('.sber');
-    const sberLink = sber.querySelector('a');
     fetch('data.json')
       .then((response) => response.json())
       .then((data) => {
@@ -147,19 +141,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (item) {
           price.textContent = item.price;
 
-          market.style.display = item.market ? 'block' : 'none';
-          ozon.style.display = item.ozon ? 'block' : 'none';
-          sber.style.display = item.sber ? 'block' : 'none';
-
-          marketLink.setAttribute('href', item.market);
-          ozonLink.setAttribute('href', item.ozon);
-          sberLink.setAttribute('href', item.sber);
-
           document.querySelectorAll('.calc-image img').forEach((img) => {
             img.classList.remove('active');
           });
 
-          // Добавление класса active к изображению в зависимости от цвета элемента
           if (item.color === 'white') {
             document.querySelector('.calc-white').classList.add('active');
           } else if (item.color === 'gold') {
@@ -168,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
             document.querySelector('.calc-black').classList.add('active');
           }
         } else {
+          document.querySelector('.white + .calc-radio').click();
           console.log('Элемент', id, 'не найден');
         }
       })

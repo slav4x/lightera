@@ -5,6 +5,7 @@
   color: #fff
   .container
     @include flexbox
+    align-items: flex-start
     &::before
       content: ''
       z-index: -1
@@ -155,3 +156,31 @@
           transition: .25s
         &:hover::before
           opacity: 1
+
+  &-form
+    padding: 50px 40px
+    border-radius: 20px
+    border: 1px solid rgba(255, 255, 255, 0.10)
+    background: linear-gradient(233deg, rgba(255, 255, 255, 0.60) 2.77%, rgba(94, 93, 100, 0.60) 71.53%)
+    backdrop-filter: blur(56px)
+    margin-left: auto
+    max-width: 570px
+    margin-bottom: -210px
+    position: relative
+    z-index: 20
+    &__title
+      font-size: 34px
+      font-weight: 400
+    form
+      width: 100%
+      max-width: 420px
+      @include flexbox
+      align-items: flex-start
+      flex-direction: column
+      margin-top: 30px
+      gap: 20px
+      span
+        @include flexbox
+        align-items: flex-start
+        flex-direction: column
+        gap: 15px

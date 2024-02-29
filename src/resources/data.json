@@ -28,7 +28,7 @@
   },
   {
     "id": 2112,
-    "price": "49 500",
+    "price": "50 500",
     "color": "white",
     "area": 25,
     "market": "https://market.yandex.ru/product--haier-as09ns6era/1892268396?businessId=3699203&sku=102084233293&do-waremd5=j1KWyACsknDbjkN3GTRzqA&uniqueId=3699203",
@@ -37,7 +37,7 @@
   },
   {
     "id": 2122,
-    "price": "49 500",
+    "price": "50 500",
     "color": "black",
     "area": 25,
     "market": "https://market.yandex.ru/product--invertornaia-split-sistema-haier-lightera-as09ns6era-b-1u09bs3era-s-wi-fi-modulem/1913658791?businessId=3699203&sku=102260638767&do-waremd5=lstxKhniz-CIyF9eB1zz6A&uniqueId=3699203",
@@ -46,7 +46,7 @@
   },
   {
     "id": 2132,
-    "price": "49 500",
+    "price": "50 500",
     "color": "gold",
     "area": 25,
     "market": "https://market.yandex.ru/product--invertornaia-split-sistema-haier-lightera-as09ns6era-b-1u09bs3era-s-wi-fi-modulem/1913658791?businessId=3699203&sku=102260638766&do-waremd5=fonOE7Mf6BsR_S0GXyE4sg&uniqueId=3699203",
@@ -79,7 +79,7 @@
   },
   {
     "id": 2212,
-    "price": "55 700",
+    "price": "56 700",
     "color": "white",
     "market": "https://market.yandex.ru/product--split-sistema-haier-lightera-as12ns6era-w-1u12bs3era-s-wi-fi-modulem/1914435558?businessId=3699203&sku=102262720692&do-waremd5=n7VI5gBEC-HYoXKYIWLimQ&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/invertornaya-split-sistema-haier-lightera-as12ns6era-w-1u12bs3era-s-wi-fi-modulem-1202511497/",
@@ -87,7 +87,7 @@
   },
   {
     "id": 2222,
-    "price": "55 700",
+    "price": "56 700",
     "color": "black",
     "market": "https://market.yandex.ru/product--split-sistema-haier-lightera-as12ns6era-b-1u12bs3era-s-wi-fi-modulem/1914457071?businessId=3699203&sku=102262931302&do-waremd5=mtc0aIj8aoeJwRGMsMo2mw&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/invertornaya-split-sistema-haier-lightera-as12ns6era-b-1u12bs3era-s-wi-fi-modulem-1202511831/",
@@ -95,7 +95,7 @@
   },
   {
     "id": 2232,
-    "price": "55 700",
+    "price": "56 700",
     "color": "gold",
     "market": "https://market.yandex.ru/product--split-sistema-haier-lightera-as12ns6era-g-1u12bs3era-s-wi-fi-modulem/1914456802?businessId=3699203&sku=102262904182&do-waremd5=23GRrzvNP-Ti6002JlWY4g&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/invertornaya-split-sistema-haier-lightera-as12ns6era-g-1u12bs3era-s-wi-fi-modulem-1202464234/",
@@ -103,21 +103,21 @@
   },
   {
     "id": 1311,
-    "price": "35 400",
+    "price": "32 700",
     "color": "white",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-07hnf303-r2/666889233?businessId=3699203&sku=100943714238&do-waremd5=hqJRwJ4NPtBwaPWmOVBhjA&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-07hnf303-r2-w-hsu-07hun403-r2-447179769/"
   },
   {
     "id": 1321,
-    "price": "35 400",
+    "price": "32 700",
     "color": "black",
     "market": "https://market.yandex.ru/product--nastennaia-split-sistema-haier-lightera-hsu-07hnf203-r2-b-hsu-07hun403-r2/1755893789?businessId=3699203&sku=101768789685&do-waremd5=t4sGZm81VsQ9hdj5T7VNyg&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-07hnf203-r2-b-hsu-07hun403-r2-447410841/"
   },
   {
     "id": 1331,
-    "price": "35 400",
+    "price": "32 700",
     "color": "gold",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-07hnf303-r2/666889233?sku=100943714237&do-waremd5=QVMLqiifMwjY00ZF-XLrTA&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-07hnf303-r2-g-hsu-07hun403-r2-447267487/"
@@ -145,21 +145,21 @@
   },
   {
     "id": 1111,
-    "price": "38 100",
+    "price": "34 700",
     "color": "white",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-09hnf303-r2/666794128?businessId=3699203&sku=100943581802&do-waremd5=MSCt7GniXyBej_W5c7sEEw&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-lightera-on-off-hsu-09hnf303-r2-w-hsu-09hun203-r2-1083341056"
   },
   {
     "id": 1121,
-    "price": "38 100",
+    "price": "34 700",
     "color": "black",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-09hnf203-r2/1967996320?businessId=3699203&sku=100727371770&do-waremd5=WARwPukGnaJJ0fyIM26w8g&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-09hnf203-r2-b-hsu-09hun203-r2-447416071/"
   },
   {
     "id": 1131,
-    "price": "38 100",
+    "price": "34 700",
     "color": "gold",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-09hnf303-r2/666794128?businessId=3699203&sku=100943581801&do-waremd5=ViOVgXmKTEBMnh6I7ttrTw&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-09hnf303-r2-g-hsu-9hun203-r2-447443135/"
@@ -187,20 +187,20 @@
   },
   {
     "id": 1211,
-    "price": "43 000",
+    "price": "39 200",
     "color": "white",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-12hnf303-r2/1967996321?businessId=3699203&sku=100727372762&do-waremd5=TAv8DPUxEV8VcvziyHTkzQ&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-12hnf303-r2-w-hsu-12hun203-r2-447454149/"
   },
   {
     "id": 1221,
-    "price": "43 000",
+    "price": "39 200",
     "color": "black",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-12hnf303-r2-b-hsu-12hun203-r2-447604395"
   },
   {
     "id": 1231,
-    "price": "43 000",
+    "price": "39 200",
     "color": "gold",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-12hnf303-r2-g-hsu-12hun203-r2-447569460"
   },
@@ -222,13 +222,13 @@
   },
   {
     "id": 1421,
-    "price": "64 600",
+    "price": "60 200",
     "color": "black",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lighter-on-off-hsu-18hnf303-r2-b-hsu-18hun303-r2-557890423"
   },
   {
     "id": 1431,
-    "price": "64 600",
+    "price": "60 200",
     "color": "gold",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-on-off-hsu-18hnf303-r2-g-hsu-18hun303-r2-447705653"
   },
@@ -244,20 +244,20 @@
   },
   {
     "id": 1511,
-    "price": "83 800",
+    "price": "76 100",
     "color": "white",
     "market": "https://market.yandex.ru/product--split-sistema-haier-hsu-24hnf203-r2-hsu-24hun303-r2/677370161?businessId=3699203&sku=100991543372&do-waremd5=f6r9Mre4tRKmhlBj7hYQKg&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-haier-lightera-hsu-24hnf203-r2-w-hsu-24hun303-r2-572446665/"
   },
   {
     "id": 1521,
-    "price": "83 800",
+    "price": "76 100",
     "color": "black",
     "market": "https://www.ozon.ru/product/split-sistema-konditsioner-nastennyy-haier-lightera-hsu-24hnf203-r2-b-hsu-24hun303-r2-1293786598"
   },
   {
     "id": 1531,
-    "price": "83 800",
+    "price": "76 100",
     "color": "gold",
     "market": "https://market.yandex.ru/product--konditsioner-haier-lightera-hsu-24hnf203-r2-g-hsu-24hun303-r2/6446483?businessId=3699203&sku=101498680748&do-waremd5=Xd0n14yLufk8xmSnI7aOlA&uniqueId=3699203",
     "ozon": "https://www.ozon.ru/product/split-sistema-konditsioner-nastennyy-haier-lightera-hsu-24hnf203-r2-g-hsu-24hun303-r2-1293786098/"
