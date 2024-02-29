@@ -1,0 +1,56 @@
+.promo
+  padding-top: 90px
+  &-slider
+    overflow: hidden
+    border-radius: 20px
+    position: relative
+    img
+      width: 100%
+      max-width: initial
+    &.black
+      .promo-arrow
+        background-color: rgba(0, 0, 0, 0.4)
+      .promo-pagination .swiper-pagination-bullet
+        background: #000
+  &-arrow
+    cursor: pointer
+    display: block
+    width: 34px
+    height: 34px
+    border-radius: 100%
+    background-color: rgba(255, 255, 255, 0.40)
+    background-image: url("data:image/svg+xml,%3Csvg width='8' height='10' viewBox='0 0 8 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.77538 0.19887L0.210111 4.51989C-0.0700368 4.78505 -0.0700368 5.21495 0.210111 5.48011L4.77538 9.80113C5.05553 10.0663 5.50974 10.0663 5.78989 9.80113C6.07004 9.53597 6.07004 9.10606 5.78989 8.8409L1.73187 5L5.78989 1.1591C6.07004 0.893936 6.07004 0.464028 5.78989 0.198869C5.50974 -0.0662898 5.05553 -0.0662897 4.77538 0.19887Z' fill='white'/%3E%3C/svg%3E%0A")
+    background-repeat: no-repeat
+    background-position: center
+    backdrop-filter: blur(8px)
+    position: absolute
+    top: 0
+    bottom: 0
+    margin: auto 0
+    z-index: 20
+    transition: .3s
+  &-prev
+    left: 40px
+  &-next
+    right: 40px
+    transform: rotate(180deg)
+  &-pagination
+    position: absolute
+    z-index: 20
+    bottom: 25px !important
+    left: 0
+    right: 0
+    @include flexbox
+    align-items: center
+    justify-content: center
+    gap: 10px
+    .swiper-pagination-bullet
+      display: block
+      width: 10px
+      height: 10px
+      margin: 0 !important
+      background: #fff
+      opacity: 0.4
+      transition: .3s
+    .swiper-pagination-bullet-active
+      opacity: 1

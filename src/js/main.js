@@ -77,6 +77,30 @@ document.addEventListener('DOMContentLoaded', function () {
     },
   });
 
+  const promoSlider = new Swiper('.promo-slider', {
+    loop: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    navigation: {
+      nextEl: '.promo-next',
+      prevEl: '.promo-prev',
+    },
+    pagination: {
+      el: '.promo-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return `<span class="${className}"></span>`;
+      },
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        const slider = document.querySelector('.promo-slider');
+        const activeSlide = document.querySelector('.swiper-slide-active');
+        activeSlide.classList.contains('black') ? slider.classList.add('black') : slider.classList.remove('black');
+      },
+    },
+  });
+
   function convertRadioButtonsToNumber() {
     const radioButtons = document.querySelectorAll('.calc-main input[type="radio"]:checked');
     let id = '';
