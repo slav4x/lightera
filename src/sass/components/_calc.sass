@@ -50,11 +50,14 @@
     @include flexbox
     align-items: flex-start
     gap: 30px
+    position: relative
+    z-index: 30
   &-section
     flex: 1
     @include flexbox
     align-items: flex-start
     gap: 10px 12px
+    position: relative
     p
       font-size: 16px
       color: #fafafa
@@ -63,6 +66,13 @@
     &:nth-child(2n-1)
       width: 256px
       flex: initial
+    .inline
+      @include flexbox
+      align-items: flex-start
+      width: 100%
+      gap: 10px
+      p
+        width: auto
   &-radio
     input
       @include visually-hidden
@@ -184,3 +194,53 @@
         align-items: flex-start
         flex-direction: column
         gap: 15px
+  &-info
+    position: relative
+    z-index: 100
+    display: inline-block
+    &__icon
+      width: 14px
+      height: 14px
+      display: inline-block
+      border-radius: 100%
+      background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='7' cy='7' r='7' fill='%23FAFAFA' fill-opacity='0.7'/%3E%3Cpath d='M8.38998 2.33944C8.54368 2.49315 8.62053 2.68198 8.62053 2.90595C8.62053 3.12992 8.54368 3.31656 8.38998 3.46587C8.23627 3.61518 8.04744 3.68984 7.82347 3.68984C7.5995 3.68984 7.41286 3.61518 7.26355 3.46587C7.11424 3.31656 7.04178 3.12992 7.04617 2.90595C7.04617 2.68198 7.11863 2.49315 7.26355 2.33944C7.41286 2.18574 7.5995 2.10889 7.82347 2.10889C8.04744 2.10889 8.23627 2.18574 8.38998 2.33944ZM6.72998 6.10079C6.72998 5.79338 6.60921 5.63968 6.36768 5.63968C6.17006 5.63968 5.81435 5.75825 5.30054 5.99539V5.9361C5.56403 5.61552 5.88681 5.32568 6.26887 5.06658C6.65532 4.80309 7.01763 4.67134 7.35577 4.67134C7.83445 4.67134 8.07159 5.01388 8.0672 5.69896C8.0672 6.00198 8.03207 6.32915 7.9618 6.68047L7.36895 9.87531C7.32942 10.1081 7.30527 10.3079 7.29649 10.4748C7.29649 10.6372 7.32723 10.7602 7.38871 10.8436C7.45019 10.9227 7.54241 10.96 7.66538 10.9556C7.89374 10.9556 8.23408 10.8436 8.68641 10.6197L8.69958 10.6724C8.43609 10.9842 8.11551 11.2652 7.73784 11.5155C7.36456 11.7615 7.01104 11.8866 6.67728 11.891C6.1986 11.891 5.96146 11.5529 5.96585 10.8766C5.96585 10.5648 6.00099 10.231 6.07125 9.87531L6.66411 6.68047C6.70802 6.44333 6.72998 6.2501 6.72998 6.10079Z' fill='%23060321'/%3E%3C/svg%3E%0A") no-repeat center
+    &__tooltip
+      position: absolute
+      z-index: 100
+      top: -110px
+      left: 30px
+      @include flexbox
+      align-items: flex-start
+      padding: 40px
+      gap: 40px
+      width: calc(122px + 320px + 320px)
+      opacity: 0
+      pointer-events: none
+      transform: translate(50px, 0)
+      border-radius: 20px
+      border: 1px solid rgba(255, 255, 255, 0.10)
+      background: linear-gradient(233deg, rgba(255, 255, 255, 0.60) 2.77%, rgba(94, 93, 100, 0.60) 71.53%)
+      backdrop-filter: blur(56px)
+      transition: .25s
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        left: -50px
+        bottom: 0
+        width: 50px
+    &__text
+      line-height: 1.25
+      width: 320px
+      h3
+        font-size: 20px
+        font-weight: 400
+        margin-bottom: 20px
+      p
+        font-size: 14px
+        opacity: 1
+    &:hover
+      .calc-info__tooltip
+        pointer-events: auto
+        opacity: 1
+        transform: translate(0, 0)

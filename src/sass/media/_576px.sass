@@ -48,3 +48,27 @@
 
   .calc-image
     height: 90px
+
+  .calc-info
+    &::before
+      content: ''
+      position: absolute
+      top: -10px
+      left: -10px
+      bottom: -10px
+      right: -10px
+    &__tooltip
+      width: 340px
+      top: 26px
+      left: -70px
+      transform: translate(0, 20px)
+      &::before
+        left: 0
+        right: 0
+        bottom: initial
+        top: -50px
+    &__text
+      h3
+        font-size: 17px
+      p
+        font-size: 12px
