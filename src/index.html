@@ -405,4 +405,21 @@
   </div>
 </footer>
 
+<div class="popup" id="popup-call">
+  <h3>Оставьте ваши контактные данные</h3>
+  <h4>и наш специалист свяжется с вами в течение 30 минут</h4>
+  <form action="#" method="post">
+    <input type="text" name="name" class="input black" placeholder="Введите ваше имя" />
+    <input type="email" name="email" class="input black" placeholder="Введите ваш e-mail" />
+    <input type="tel" name="phone" class="input black masked" placeholder="+7 (___) ___ _____" required />
+    <span>
+      <button class="btn">Заказать звонок</button>
+      <label class="checkbox black">
+        <input type="checkbox" required checked />
+        <p>Я согласен с <a href="https://haieronline.ru/content/konfidentsialnost-personalnoy-informatsii/" target="_blank">политикой конфиденциальности</a></p>
+      </label>
+    </span>
+  </form>
+</div>
+
 {% endblock %}

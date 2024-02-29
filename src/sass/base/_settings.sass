@@ -60,6 +60,11 @@ input
   width: 100%
   @include placeholder
     color: rgba(255,255,255,.4)
+  &.black
+    border-color: rgba(0,0,0,.15)
+    color: #05011d
+    @include placeholder
+      color: rgba(0,0,0,.4)
 
 .btn
   line-height: 20px
@@ -94,3 +99,37 @@ input
       background-position: center
     a
       border-bottom: 1px solid #fff
+  &.black
+    p::before, a
+      border-color: #05011D
+    input:checked + p::before
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='12' viewBox='0 0 12 12' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.69104 5.99997L5.23093 7.53921L8.30942 4.46072' stroke='%2305011D' stroke-width='1.13409' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+
+.popup
+  display: none
+  padding: 40px
+  max-width: 500px
+  border-radius: 20px
+  color: #05011d
+  h3
+    font-size: 42px
+    font-weight: 400
+    margin-bottom: 10px
+  h4
+    font-size: 16px
+    font-weight: 400
+    line-height: 1.4
+    max-width: 270px
+  form
+    width: 100%
+    max-width: 420px
+    @include flexbox
+    align-items: flex-start
+    flex-direction: column
+    margin-top: 30px
+    gap: 20px
+    span
+      @include flexbox
+      align-items: flex-start
+      flex-direction: column
+      gap: 15px
