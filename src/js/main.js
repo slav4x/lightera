@@ -8,8 +8,27 @@ const viewportFix = (width) => {
 
 viewportFix(420);
 
+const maskOptions = {
+  mask: '+7 (000) 000-00-00',
+  onFocus: function () {
+    if (this.value === '') this.value = '+7 ';
+  },
+  onBlur: function () {
+    if (this.value === '+7 ') this.value = '';
+  },
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   AOS.init();
+
+  const maskedElements = document.querySelectorAll('.masked');
+  maskedElements.forEach((item) => new IMask(item, maskOptions));
+
+  Fancybox.bind('[data-fancybox]', {
+    dragToClose: false,
+    autoFocus: false,
+    placeFocusBack: false,
+  });
 
   const switchItems = document.querySelectorAll('.hero-air__switch li');
   const images = document.querySelectorAll('.hero-air__images img');
